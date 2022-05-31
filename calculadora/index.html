@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="calc-icon.png" type="image/x-icon">
+        <title>Calculadora 100% Funcional</title>
+</head>
+<body>
+        <h1>Calculadora Funcional com HTML, CSS e JS</h1>
+        <main id="calc">
+                <section id="content">
+                        <p id="credits">Designed by <a href="http://twitter.com/eusouoewe" target="_blank">&copy;Ewerton Fernandes</a></p>
+                        <div id="visor"></div>
+                        <div id="buttons">
+                                <table>
+                                        <tr>
+                                                <td><button class="botao" onclick="allclear()">AC</button></td>
+                                                <td><button class="botao" onclick="erase()">E</button></td>
+                                                <td><button class="botao" onclick="insert('/')">/</button></td>
+                                                <td><button class="botao" onclick="insert('*')">X</button></td>
+                                        </tr>
+                                        <tr>
+                                                <td><button class="botao" onclick="insert('7')">7</button></td>
+                                                <td><button class="botao" onclick="insert('8')">8</button></td>
+                                                <td><button class="botao" onclick="insert('9')">9</button></td>
+                                                <td><button class="botao" onclick="insert('-')">-</button></td>
+                                        </tr>
+                                        <tr>
+                                                <td><button class="botao" onclick="insert('4')">4</button></td>
+                                                <td><button class="botao" onclick="insert('5')">5</button></td>
+                                                <td><button class="botao" onclick="insert('6')">6</button></td>
+                                                <td><button class="botao" onclick="insert('+')">+</button></td>
+                                        </tr>
+                                        <tr>
+                                                <td><button class="botao" onclick="insert('1')">1</button></td>
+                                                <td><button class="botao" onclick="insert('2')">2</button></td>
+                                                <td><button class="botao" onclick="insert('3')">3</button></td>
+                                                <td rowspan="2"><button class="botao" id="equal" onclick="result()">=</button></td>
+                                        </tr>
+                                        <tr>
+                                                <td colspan="2"><button class="botao" id=zero onclick="insert('0')">0</button></td>
+                                                <td><button class="botao" onclick="insert('.')">.</button></td>
+                                        </tr>
+                                </table>
+                        </div>
+                </section>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>

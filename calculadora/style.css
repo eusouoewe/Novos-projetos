@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0; margin: 0; padding: 0;
+}
+
+body {
+        background: linear-gradient(to top right, rgb(80, 80, 255), purple);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+}
+
+h1 {
+        font-size: 18pt;
+        color: white;
+        padding-top: 25px;
+        font-weight: lighter;
+        text-align: center;
+}
+
+#calc {
+        background-color: rgba(0, 0, 0, 0.850);
+        border: 1px solid black;
+        border-radius: 7px;
+        box-shadow: 2px 5px 15px black;
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+#credits {
+        margin: 10px 0 0 16px;
+        font-size: 12px;
+        font-weight: bold;
+        color: silver;
+}
+
+#credits > a  {
+        text-decoration: none;
+        color: goldenrod;
+}
+
+#visor {
+        width: 90%;
+        margin-left: 5%;
+        height: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        background-color: grey;
+        font-size: 20px;
+        color: white;
+        text-align:right;
+        padding-top: 10px;
+}
+
+#buttons {
+        margin-left: 10px;
+}
+
+.botao {
+        background-color: rgb(31,31,31);
+        border-radius: 3px;
+        margin: 1px;
+        color: white;
+        font-size: 16px;
+        width: 66px;
+        height: 57.5px;
+        cursor: pointer;
+        transition: .2s;
+}
+
+.botao:hover {
+        background-color: black;
+}
+
+button#equal {
+        height: 118px;
+}
+
+button#zero {
+        width: 136px;
+}
