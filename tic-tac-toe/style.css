@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+* {
+        box-sizing: border-box;
+        padding: 0; margin: 0; border: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+        background-image: linear-gradient(to bottom left, blue, red);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+h1 {
+        text-align: center;
+        margin-top: 20px;
+}
+
+/*message to show winner of match*/
+#winner {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+}
+
+.winner-message {
+        font-size: 2.5rem;
+        background-color: #7A0085;
+        padding: 10px 15px;
+        cursor: pointer;
+        border: none;
+        border-radius: 7px;
+        margin-top: 14px;
+        color: white;
+        opacity: 1;
+        transition: .5s;
+}
+
+.winner-message:hover {
+        background-color: white;
+        color: #7A0085;
+}
+
+#winner-text {
+        font-size: 4em;
+        color: white;
+}
+
+.field {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+}
+
+.slot {
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+/*Adding opacity to hover X*/
+.field.x .slot:not(.x):not(.circle):hover:before,
+.field.x .slot:not(.x):not(.circle):hover::after,
+.field.circle .slot:not(.x):not(.circle):hover:before,
+.field.circle .slot:not(.x):not(.circle):hover::after  {
+        opacity: .3;
+}
+
+/*Not allowing to click on marked slots*/
+.slot.x, .slot.circle {
+        cursor: not-allowed;
+}
+
+/*removing  external borders*/
+.slot:nth-child(1), .slot:nth-child(2), .slot:nth-child(3) {
+        border-top: none;
+}
+
+/*removing  external borders*/
+.slot:nth-child(1), .slot:nth-child(4), .slot:nth-child(7) {
+        border-left: none;
+}
+
+/*removing  external borders*/
+.slot:nth-child(3), .slot:nth-child(6), .slot:nth-child(9) {
+        border-right: none;
+}
+
+/*removing  external borders*/
+.slot:nth-child(7), .slot:nth-child(8), .slot:nth-child(9) {
+        border-bottom: none;
+}
+
+/*Cross and hover of Cross*/
+.slot.x::before,
+.slot.x::after,
+.field.x .slot:not(.x):not(.circle):hover:before,
+.field.x .slot:not(.x):not(.circle):hover::after {
+        content: '';
+        height:  calc(100px * 0.15);
+        width: calc(100px * 0.9);
+        background-color: white;
+        position: absolute;
+}
+
+/*Cross and hover of Cross*/
+.slot.x::before,
+.field.x .slot:not(.x):not(.circle):hover::before {
+        transform: rotate(45deg);
+}
+
+/*Cross and hover of Cross*/
+.slot.x::after,
+.field.x .slot:not(.x):not(.circle):hover::after {
+        transform: rotate(135deg);
+}
+
+/*Circle and hover of circle*/
+.slot.circle::before,
+.slot.circle::after,
+.field.circle .slot:not(.x):not(.circle):hover:before,
+.field.circle .slot:not(.x):not(.circle):hover::after {
+        content: '';
+        height: calc(100px * 0.9);
+        width: calc(100px * 0.9);
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+}
+
+footer > p {
+        bottom: 0;
+        position: fixed;
+        width: 99%;
+        text-align: end;
+        color: white;
+}
+
+footer > p > a {
+        text-decoration: none;
+        color: goldenrod;
+}
