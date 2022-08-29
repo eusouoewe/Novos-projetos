@@ -18,7 +18,8 @@ function showHours() {
         clock.innerHTML = time;
         document.getElementById('clock').style.fontSize = '40px';
         document.getElementById('clock').style.backgroundColor = 'lightblue';
+        document.getElementById('clock').style.boxShadow = '2px 4px 30px lightskyblue';
         document.querySelector('.hours').style.backgroundColor = 'lightblue';
+        document.querySelector('.hours').style.boxShadow = '2px 4px 30px lightskyblue';
         var timer = setInterval(showHours, 1000)
 }
-

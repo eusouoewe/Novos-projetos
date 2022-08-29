@@ -41,7 +41,7 @@ h1 {
 .button:hover {
         background-color: grey;
         color: white;
-        box-shadow: 2px 4px 16px black;
+        box-shadow: 2px 4px 30px black;
 }
 
 .button:active {
