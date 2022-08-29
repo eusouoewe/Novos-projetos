@@ -22,23 +22,19 @@ h1 {
         flex-direction: row;
         flex-wrap: nowrap;
         width: 90vw;
+        height: 70vh;
         margin: 20px auto;
 }
 
 .button {
-        height: 12vh;
-        display: flex;
-        flex-direction: column;
-        word-wrap: break-word;
+        width: 150px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 15px;
+        border: none;
         background-color: lightgrey;
-        box-shadow: 1px 2px 8px black;
-        border-radius: 14px;
-        text-align: center;
-        justify-content: center;
-        padding: 0 5px;
-        margin: 30px 3vw 0 -1.5vw;
-        cursor: pointer;
-        transition: .6s ease-in-out;
+        box-shadow: 2px 4px 16px black;
+        transition: .7s;
 }
 
 .button:hover {
@@ -52,13 +48,15 @@ h1 {
 }
 
 aside {
-        width: 20vw;
-        margin: auto;
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
 }
 
 main {
-        width: 75vw;
-        height: 70vh;
+        width: 65vw;
 }
 
 .clock {
