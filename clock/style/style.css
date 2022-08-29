@@ -34,6 +34,7 @@ h1 {
         border: none;
         background-color: lightgrey;
         box-shadow: 2px 4px 16px black;
+        cursor: pointer;
         transition: .7s;
 }
 
@@ -59,7 +60,7 @@ main {
         width: 65vw;
 }
 
-.clock {
+#clock {
         background-color: lightgrey;
         width: 50%;
         height: 40%;
