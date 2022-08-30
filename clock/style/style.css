@@ -38,6 +38,16 @@ h1 {
         transition: .7s;
 }
 
+a > .button {
+        margin:  30px auto;
+}
+
+a > .button > i {
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+}
+
 .button:hover {
         background-color: grey;
         color: white;
@@ -63,6 +73,7 @@ main {
 #clock {
         background-color: lightgrey;
         width: 50%;
+        min-width: fit-content;
         height: 40%;
         text-align: center;
         justify-content: center;

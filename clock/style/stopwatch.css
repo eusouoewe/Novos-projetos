@@ -77,6 +77,23 @@ h1 {
         box-shadow: 2px 4px 30px red;
 }
 
+.back > a {
+        text-decoration: none;
+}
+
+.back > a > button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-shadow: 2px 4px 16px black;
+}
+
+.back > a > button > i {
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+}
+
 .back > a > button:hover {
         background-color: grey;
         box-shadow: 2px 4px 30px black;
@@ -94,12 +111,12 @@ main {
         width: fit-content;
         height: fit-content;
         top: 45%;
-        margin: 0 auto;
 }
 
 #clock {
         display: flex;
         width: 60vw;
+        min-width: fit-content;
         height: 30vh;
         margin: 5% auto;
         background-color: lightgrey;
@@ -107,6 +124,7 @@ main {
         justify-content: center;
         vertical-align: middle;
         line-height: 220px;
+        font-size: 30px;
         border-radius: 25px;
         box-shadow: 2px 4px 16px black;
 }

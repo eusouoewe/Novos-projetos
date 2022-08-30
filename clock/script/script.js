@@ -13,13 +13,17 @@ function showHours() {
         if (seconds < 10) {
                 seconds = '0'+seconds;
         }
-        var time = hours +':' + minutes +':' + seconds;
+        var clocktime = hours +':' + minutes +':' + seconds;
 
-        clock.innerHTML = time;
+        clock.innerHTML = clocktime;
         document.getElementById('clock').style.fontSize = '40px';
         document.getElementById('clock').style.backgroundColor = 'lightblue';
         document.getElementById('clock').style.boxShadow = '2px 4px 30px lightskyblue';
         document.querySelector('.hours').style.backgroundColor = 'lightblue';
         document.querySelector('.hours').style.boxShadow = '2px 4px 30px lightskyblue';
-        var timer = setInterval(showHours, 1000)
+        var ctimer = setInterval(showHours, 1000)
+}
+
+function timer() {
+        var  time = 0;
 }
