@@ -16,13 +16,25 @@
                         <div class="back">
                                 <a href="index.html"><button class="button"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Back</button></a>
                         </div>
-                        <div id="clock">
+                        <div id="timer">
                                 Let's start.
                         </div>
                 </main>
-                <div class="buttons">
-                        <option></option>
-                        <button class="button pause" onclick="start()">Start</button>
+                <div class="start-timer">
+                        <select class="mins">
+                                <option value="empty">Select</option>
+                                <option value="1">1min</option>
+                                <option value="2">2min</option>
+                                <option value="3">3min</option>
+                                <option value="4">4min</option>
+                                <option value="5">5min</option>
+                                <option value="6">6min</option>
+                                <option value="7">7min</option>
+                                <option value="8">8min</option>
+                                <option value="9">9min</option>
+                                <option value="10">10min</option>
+                        </select>
+                        <button class="button timer" onclick="timer()">Start</button>
                 </div>
         </div>
         <footer>

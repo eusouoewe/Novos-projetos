@@ -12,6 +12,74 @@ body {
         background-color: ghostwhite;
 }
 
+h1 {
+        text-align: center;
+        margin-top: 5%;
+}
+
+.content {
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90vw;
+        height: 70vh;
+        margin: 1% auto;
+}
+
+main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90vw;
+}
+
+.back {
+        position: relative;
+        top: 45%;
+}
+
+.back > a {
+        text-decoration: none;
+}
+
+.back > a > button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-shadow: 2px 4px 16px black;
+}
+
+.back > a > button > i {
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+}
+
+.back > a > button:hover {
+        background-color: grey;
+        box-shadow: 2px 4px 30px black;
+}
+
+#timer {
+        width: 60vw;
+        min-width: fit-content;
+        height: 30vh;
+        margin: 5% auto;
+        background-color: lightgrey;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        line-height: 220px;
+        font-size: 30px;
+        border-radius: 25px;
+        box-shadow: 2px 4px 16px black;
+}
+
+.start-timer {
+
+}
+
 footer {
         position: absolute;
         bottom: 0;
@@ -21,30 +89,4 @@ footer {
 footer > a {
         text-decoration: none;
         color: black;
-}
-
-h1 {
-        text-align: center;
-        margin-top: 5%;
-}
-
-.content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 90vw;
-        height: 70vh;
-        margin: 20px auto;
-}
-
-.button {
-        width: 150px;
-        margin: auto;
-        padding: 20px;
-        border-radius: 15px;
-        border: none;
-        background-color: lightgrey;
-        box-shadow: 2px 4px 16px black;
-        cursor: pointer;
-        transition: .7s;
 }
