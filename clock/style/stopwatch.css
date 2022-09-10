@@ -1,0 +1,147 @@
+@charset'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        font-family: 'Graduate', cursive;
+        box-sizing: border-box;
+}
+
+body {
+        background-color: ghostwhite;
+}
+
+h1 {
+        text-align: center;
+        margin-top: 5%;
+}
+
+.content {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 70vh;
+        margin: auto;
+}
+
+.buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+}
+
+.button {
+        padding: 15px 30px;
+        width: 150px;
+        background-color: lightgrey;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .7s ease-in-out;
+}
+
+.button:hover {
+        color: white;
+}
+
+.start {
+        background-color: lightgreen;
+        box-shadow: 2px 4px 16px lightgreen;
+}
+
+.start:hover {
+        background-color: green;
+        box-shadow: 2px 4px 30px green;
+
+}
+
+.pause {
+        background-color: lightsalmon;
+        box-shadow: 2px 4px 16px lightsalmon;
+}
+
+.pause:hover {
+        background-color: orangered;
+        box-shadow: 2px 4px 30px orangered;
+}
+
+.reset {
+        background-color: crimson;
+        box-shadow: 2px 4px 16px crimson;
+}
+
+.reset:hover {
+        background-color: red;
+        box-shadow: 2px 4px 30px red;
+}
+
+.back > a {
+        text-decoration: none;
+}
+
+.back > a > button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-shadow: 2px 4px 16px black;
+}
+
+.back > a > button > i {
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+}
+
+.back > a > button:hover {
+        background-color: grey;
+        box-shadow: 2px 4px 30px black;
+}
+
+.back > a > button:active {
+                box-shadow: inset -2px -4px 10px rgba(0, 0, 0, 0.700);
+}
+
+main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90vw;
+}
+
+.back {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        top: 45%;
+}
+
+#clock {
+        display: flex;
+        width: 60vw;
+        min-width: fit-content;
+        height: 30vh;
+        margin: 5% auto;
+        background-color: lightgrey;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        line-height: 220px;
+        font-size: 30px;
+        border-radius: 25px;
+        box-shadow: 2px 4px 16px black;
+}
+
+footer {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 0;
+        right: 5px;
+}
+
+footer > a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black;
+}

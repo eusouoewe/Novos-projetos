@@ -1,0 +1,122 @@
+@charset'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        font-family: 'Graduate', cursive;
+        box-sizing: border-box;
+}
+
+body {
+        background-color: ghostwhite;
+}
+
+h1 {
+        text-align: center;
+        margin-top: 5%;
+}
+
+.content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90vw;
+        height: 70vh;
+        margin: 1% auto;
+}
+
+main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90vw;
+}
+
+.back {
+        position: relative;
+        top: 45%;
+        width: fit-content;
+        height: fit-content;
+}
+
+.back > a {
+        text-decoration: none;
+}
+
+.back > a > button, .mins, .timer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 15px 30px;
+        width: 150px;
+        background-color: lightgrey;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .7s ease-in-out;
+        box-shadow: 2px 4px 16px black;
+}
+
+.back > a > button > i {
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+}
+
+.back > a > button:hover {
+        background-color: grey;
+        box-shadow: 2px 4px 30px black;
+        color: white;
+}
+
+.back > a > button:active {
+                box-shadow: inset -2px -4px 10px rgba(0, 0, 0, 0.700);
+}
+
+#timer {
+        width: 60vw;
+        min-width: fit-content;
+        height: 30vh;
+        margin: 5% auto;
+        background-color: lightgrey;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        line-height: 220px;
+        font-size: 30px;
+        border-radius: 25px;
+        box-shadow: 2px 4px 16px black;
+}
+
+.select-timer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+}
+
+.mins:hover, .select-timer > .timer:hover {
+        background-color: grey;
+        box-shadow: 2px 4px 30px black;
+        color: white;
+}
+
+.select-timer > mins:active, .select-timer > .timer:active {
+        box-shadow: inset -2px -4px 10px rgba(0, 0, 0, 0.700);
+} 
+
+option:active {
+        border: none;
+}
+
+footer {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+}
+
+footer > a {
+        text-decoration: none;
+        color: black;
+}

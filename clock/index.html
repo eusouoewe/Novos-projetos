@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Clock</title>
+</head>
+<body>
+        <h1>The Clock</h1>
+        <div class="content">
+                <aside>
+                        <button class="button hours" onclick="showHours()">
+                                Check the time!
+                        </button>
+                        <a href="stopwatch.html">
+                                <button class="button stopwatch">
+                                        Use stopwatch!&nbsp;<i class="fa fa-arrow-circle-o-right"></i>
+                                </button>
+                        </a>
+                        <a href="timer.html">
+                                <button class="button timer" onclick="timer()">
+                                        Use timer!&nbsp;<i class="fa fa-arrow-circle-o-right"></i>
+                                </button>
+                        </a>
+                        <button class="button date" onclick="date()">
+                                Check the date!
+                        </button>
+                </aside>
+                <main>
+                        <div id="clock">
+                                Select an option.
+                        </div>
+                </main>
+        </div>
+        <footer>
+                Designed by <a href="https://github.com/eusouoewe" target="_blank">Ewerton Fernandes&copy;</a>
+        </footer>
+        <script src="script/script.js"></script>
+</body>
+</html>
