@@ -77,9 +77,8 @@ main {
         height: 40%;
         text-align: center;
         justify-content: center;
-        vertical-align: middle;
+        padding-top: 120px;
         margin: 22.5vh auto;
-        line-height: 200px;
         border-radius: 25px;
         box-shadow: 2px 4px 16px black;
 }
