@@ -18,6 +18,7 @@ function showHours() {
         clock.innerHTML = clocktime;
         document.getElementById('clock').style.fontSize = '40px';
         document.getElementById('clock').style.backgroundColor = 'lightblue';
+        document.getElementById('clock').style.paddingTop = '7%';
         document.getElementById('clock').style.boxShadow = '2px 4px 30px lightskyblue';
         document.querySelector('.hours').style.backgroundColor = 'lightblue';
         document.querySelector('.hours').style.boxShadow = '2px 4px 30px lightskyblue';
@@ -47,7 +48,7 @@ function actualDate() {
         clock.innerHTML = trueDate;
 
         document.querySelector('.visor').style.fontSize = '40px';
-        document.querySelector('.visor').style.paddingTop = '100px'
+        document.querySelector('.visor').style.paddingTop = '7%'
         document.querySelector('.visor').style.backgroundColor = '#fc0fc0';
         document.querySelector('.visor').style.boxShadow = '2px 4px 30px #fc0fc0';
         document.querySelector('.date').style.backgroundColor = '#fc0fc0';
